@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Navigation Bar Styling */
+
+.brand h1{
+    font-size: 26px;
+}
+
+nav{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+}
+
+nav ul a{
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    margin-inline: 20px;
+    padding: 5px;  
+}
+
+.pages:hover{
+    border-bottom: 2px solid pink;
+}
+
+/* Header Section Styling */
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url("Resources/Images/Banner1.jpeg");
+    background-position: center;
+    background-size: cover;
+    transition: 5s;
+}
+
+.heading{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.heading h1{
+    font-size: 48px;
+}
+
+.heading p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.Hero-Btn{
+    margin-top: 30px;
+    padding: 10px 40px;
+    font-size: 16px;
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    scale: 1;
+    transition: 0.5s;
+}
+
+.Hero-Btn:hover{
+    background-image: linear-gradient(90deg , #df1b1b , #d62121);
+    scale: 1.2;
+    padding: 10px 60px;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: black;
+}
+
+.campussections{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.campussections h1{
+    font-size: 46px;
+}
+
+.campussections p{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.campus-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.campus-col-india {
+    border-radius: 10px;
+    padding: 90px 20px;
+    background-image: url(Resources/Images/india.jpg);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    scale: 1;
+    cursor : pointer;
+    transition: 0.5s
+}
+
+.campus-col-newyork {
+    border-radius: 10px;
+    padding: 90px 20px;
+    background-image: url(Resources/Images/newyork.jpg);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    scale: 1;
+    cursor : pointer;
+    transition: 0.5s
+}
+
+.campus-col-london {
+    border-radius: 10px;
+    padding: 90px 20px;
+    background-image: url(Resources/Images/london.jpg);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    scale: 1;
+    cursor : pointer;
+    transition: 0.5s
+}
+
+.campus-col-london:hover{
+    color: antiquewhite;
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url(Resources/Images/london.jpg);
+    scale: 1.1;
+    box-shadow: 0 0 20px black;
+    padding: 110px 30px;
+}
+
+.campus-col-india:hover{
+    color: antiquewhite;
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url(Resources/Images/india.jpg);
+    scale: 1.1;
+    box-shadow: 0 0 20px grey;
+    padding: 110px 30px;
+}
+
+.campus-col-newyork:hover{
+    color: antiquewhite;
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url(Resources/Images/newyork.jpg);
+    scale: 1.1;
+    box-shadow: 0 0 20px grey;
+    padding: 110px 30px;
+}
+
+.cources{
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.cources h1{
+    font-size: 46px;
+}
+
+.cources p{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.cources-row{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.cources-col-btech , .cources-col-mca , .cources-col-bca{
+    display: flex;
+    justify-content: center;
+    padding: 12px 15px;
+}
+
+#btech{
+    padding: 40px 90px;
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url(Resources/Images/course1.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-width: 90%;
+    scale: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#bca{
+    padding: 40px 90px;
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url(Resources/Images/course2.jpg);
+    background-size: cover;
+    background-position: center;
+    min-width: 90%;
+    scale: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#mca{
+    padding: 40px 90px;
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url(Resources/Images/course3.jpg);
+    background-size: cover;
+    background-position: center;
+    min-width: 90%;
+    scale: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#btech:hover , #mca:hover ,#bca:hover{
+    scale: 1.1;
+    padding: 80px 90px;
+}
+
+.courcesdescription{
+    text-align: center;
+    color: white;
+}
+
+.courceBTN{
+    padding: 10px 40px;
+    background-color: transparent;
+    font-size: 15px;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    scale: 1;
+    transition: 0.5s;
+}
+
+.courceBTN:hover{
+    background-color: palevioletred;
+    scale: 1.1;
+    border: 2px solid black;
+    color: black;
+}
+
+/* Faculty Section Styling */
+
+.faculty{
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url(Resources/Images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.faculty h1{
+    font-size: 46px;
+}
+
+.faculty p{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.faculty-list-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.faculty-list-row img{
+    width:  300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.faculty1 , .faculty2 , .faculty3 {
+    padding: 20px 30px;
+    background: white;
+    color: black;
+    border-radius: 20px;
+    margin-inline: 30px;
+    scale: 1;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.faculty1 h4 , .faculty2  h4, .faculty3 h4 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.faculty1 p , .faculty2  p, .faculty3 p {
+    font-size: 15px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.faculty1:hover , .faculty2:hover , .faculty3:hover {
+    scale: 1.1;
+    box-shadow: 0 0 20px pink;
+}
+
+/* Contact Us Section Styling */
+
+.contactUs{
+    background-image: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)) , url(Resources/Images/banner3.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contactUs h1{
+    font-size: 46px;
+}
+
+.input-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs input{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    scale: 1;
+    width: 270px;
+    margin-top: 40px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    padding: 10px 10px;
+    color: white;
+    transition: 0.5s;
+}
+
+.messageinput textarea{
+    height: 275px;
+    font-size: 20px;
+    scale: 1;
+    width: 70%;
+    margin-top: 40px;
+    margin-inline: 20px;
+    background: transparent;
+    outline: none;
+    padding: 20px;
+    border: 2px solid white;
+    color: white;
+    transition: 0.5s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.messageinput textarea:hover , .inputs input:hover{
+    scale: 1.1;
+}
+
+.messageinput textarea::placeholder , .inputs input::placeholder{
+    color: white;
+}
+
+.submitBTN{
+    margin-top: 50px;
+    padding: 10px 100px;
+    border: 3px solid white;
+    color: white;
+    cursor: pointer;
+    background: transparent;
+    scale: 1;
+    transition: 0.5s;
+}
+
+.submitBTN:hover{
+    background-color: palevioletred;
+    scale: 1.2;
+    border: 2px solid black;
+    color: black;
+}
+
+/* Footer Section Styling */
+
+.footer{
+    margin-top: 100px;
+    margin-inline: 160px;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-info h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.footer-info h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.footer-info a{
+    text-decoration: none;
+}
+
+.footer-info p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-info button{
+    margin-bottom: 100px;
+    padding: 10px 100px;
+    background: transparent;
+    border-radius: 2px solid black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.footer-info button:hover{
+    background-color: palevioletred;
+    scale: 1.2;
+    border: 2px solid black;
+    color: black;
+}
